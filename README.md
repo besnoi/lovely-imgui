@@ -2,7 +2,7 @@
 
 LovelyImgui is a WIP immediate-mode gui written in pure Lua. It attempts to be **simple**, **stupid** and **highly customizable**!
 
-Currently it doesn't support that many widgets but in the future (perhaps with support of contributors) it'll support many essential widgets and features! This limitation doesn't mean it's not fit for development - infact a [complete project](http://github.com/YoungNeer/brief>) has been made with this GUI!!
+Currently it doesn't support that many widgets but in the future (perhaps with support of contributors) it'll support many essential widgets and features! This limitation doesn't mean it's not fit for development - infact a [complete project](http://github.com/YoungNeer/brief) has been made with this GUI!!
 
 The following screenshot can perhaps give you an idea of the number and type of widgets LI currently supports!
 
