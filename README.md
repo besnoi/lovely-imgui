@@ -39,7 +39,7 @@ end
 
 ## Documentation
 
-Documentation will be live very soon once the alpha version is released!
+Documentation will be live very soon once the alpha version is released! Curious souls can study the [examples](https://github.com/YoungNeer/lovely-imgui/tree/examples) to learn how the library works!
 
 ## Contribution
 
