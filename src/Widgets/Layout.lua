@@ -11,6 +11,7 @@ local WIDGETS_PATH = (...):match("^(.+)%.[^%.]+")
 local Window=require(WIDGETS_PATH..'.Window')
 
 local Layout={
+	flex,         --if layout is flexible
 	x=0,y=0;      --position of the layout
 	cx=0,cy=0;    --position of the cursor
 	rh=0;         --max. height of the current row
@@ -27,6 +28,8 @@ local Layout={
 function Layout.setPadding(px,py)
 	Layout.px,Layout.py=px,py
 end
+
+function Layout.setFlex(val) Layout.flex=val end
 
 --Modified Copy from util.lua
 
@@ -63,6 +66,8 @@ end
 
 --Affects all future rows
 function Layout.setCursor(x,y,relative)
+	x=getXFromAlign(x) or (relative and 0 or Layout.cx)
+	y=getYFromAlign(y) or (relative and 0 or Layout.cy)
 	Layout.cx,Layout.cy=x+(relative and Layout.cx or 0),y+(relative and Layout.cy or 0)
 	Layout.setPosition(x,y,relative)
 end
@@ -77,7 +82,7 @@ function Layout.getPosition(w,h)
 		Layout.x=Layout.x+Layout.px+w
 		Layout.col=Layout.col+1
 		Layout.rh=math.max(Layout.rh,h)
-		if Layout.col>Layout.cols then
+		if Layout.col>Layout.cols or (Layout.flex and Layout.x+w+Layout.px>Window.getDimensions()) then
 			Layout.moveToNextRow(h)
 		end
 	end
