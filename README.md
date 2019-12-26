@@ -35,6 +35,8 @@ end
 <a href="https://raw.githubusercontent.com/YoungNeer/lovely-imgui/examples/Screenshots/responsive3.gif"><img width=215 height=200 src="https://raw.githubusercontent.com/YoungNeer/lovely-imgui/examples/Screenshots/responsive3.gif"/></a>
 <a href="https://raw.githubusercontent.com/YoungNeer/lovely-imgui/examples/Screenshots/responsive1.gif"><img width=215 height=200 src="https://raw.githubusercontent.com/YoungNeer/lovely-imgui/examples/Screenshots/responsive1.gif"/></a>
 <a href="https://raw.githubusercontent.com/YoungNeer/lovely-imgui/examples/Screenshots/responsive2.gif"><img width=215 height=200 src="https://raw.githubusercontent.com/YoungNeer/lovely-imgui/examples/Screenshots/responsive2.gif"/></a>
+<a href="https://raw.githubusercontent.com/YoungNeer/lovely-imgui/examples/Screenshots/flexible_layout.gif"><img width=215 height=200 src="https://raw.githubusercontent.com/YoungNeer/lovely-imgui/examples/Screenshots/flexible_layout.gif"/></a>
+
 <br>
 
 ## Documentation
